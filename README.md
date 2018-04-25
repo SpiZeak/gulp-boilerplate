@@ -1,6 +1,3 @@
-# gulp-boilerplate
-My custom gulp configuration
-
 This boilerplate features:
 ======
 
