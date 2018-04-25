@@ -1,0 +1,30 @@
+{
+  "name": "treeroots-gulp",
+  "version": "1.0.1",
+  "description": "Gulp development enviroment.",
+  "keywords": ["gulp", "sass", "autoprefixer", "theme"],
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpiZeak/gulp-boilerplate"
+  },
+  "author": "Tree Roots <info@treeroots.se> (http://treeroots.se/)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "autoprefixer": "^6.5.2",
+    "browser-sync": "^2.23.7",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-ignore": "^2.0.2",
+    "gulp-image": "^4.3.0",
+    "gulp-jshint": "^2.0.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "pump": "^2.0.1"
+  }
+}
