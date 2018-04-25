@@ -22,4 +22,4 @@ Run gulp:
 
 gulp
 
-Happy coding!
+**Happy coding!**
