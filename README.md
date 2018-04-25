@@ -17,6 +17,8 @@ npm install gulp -g
 
 npm install
 
+*Be sure to check if the development url in Gulpfile.js is correct. (first line of code)*
+
 Run gulp:
 ======
 
