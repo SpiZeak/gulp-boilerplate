@@ -1,7 +1,7 @@
-const // Development URL (CHECK IF CORRECT)
-  proxy = "http://localhost/gulp-boilerplate",
+const
   gulp = require("gulp"),
-  // Prepare and optimize code etc
+
+  // Import modules
   autoprefixer = require("autoprefixer"),
   browserSync = require("browser-sync").create(),
   image = require("gulp-image"),
@@ -14,10 +14,12 @@ const // Development URL (CHECK IF CORRECT)
   pump = require("pump"),
   uglify = require("gulp-uglify"),
   cssnano = require("cssnano"),
+
   // Get main project paths
   root = "./",
   src = root + "src/",
   dist = root + "dist/",
+
   // Get source code paths
   scss = src + "sass/",
   js = src + "js/",
@@ -38,7 +40,7 @@ gulp.task("sass", () => {
       }),
       cssnano()
     ]),
-    sourcemaps.write(src + "maps"),
+    sourcemaps.write(src + "maps/"),
     gulp.dest(dist + "css/")
   ]);
 });
@@ -55,7 +57,7 @@ gulp.task("img", cb => {
   );
 });
 
-// Javascript
+// Compile Javascript
 gulp.task("js", () => {
   pump([
     gulp.src(js + "*.js"),
@@ -70,9 +72,9 @@ gulp.task("js", () => {
 // Watch everything
 gulp.task("watch", () => {
   browserSync.init({
-    open: "external",
-    proxy,
-    port: 3000
+    server: {
+      baseDir: "./"
+    }
   });
   gulp.watch(scss + "**/*.scss", ["sass"]);
   gulp.watch(js + "**/*.js", ["js"]);
